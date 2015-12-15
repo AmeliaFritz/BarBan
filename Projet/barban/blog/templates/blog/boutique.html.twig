@@ -1,0 +1,95 @@
+{% extends "base.html.twig" %}
+{% load static %}
+
+{% block title %}Boutique{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <div class="row demo-tiles">
+
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+          <img src="{% static "blog/assets/img/photoCharbon.png" %}" class="tile-image">
+          <h3 class="tile-title">Charbon</h3>
+          <div class="text-boutique">
+            <p>La bière Charbon est une Stout/Noire avec une robe brune foncée presque noire.<br />
+            7% Vol.</p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+          <img src="{% static "blog/assets/img/PhotoRosa.png" %}" class="tile-image">
+          <h3 class="tile-title">Rosa</h3>
+          <div class="text-boutique">
+            <p>La bière Rosa a robe légèrement rosée apportée par l’utilisation de fleurs d’hibiscus.<br />
+            4,5% Vol.</p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+          <img src="{% static "blog/assets/img/BiereBlanche.png" %}" class="tile-image">
+          <h3 class="tile-title">Blanche du paradis</h3>
+          <div class="text-boutique">
+            <p>La robe jaune claire de cette bière blanche, on y retrouve de fines notes de levures fruitées.<br />
+            5,5% Vol.</p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/photoAmbree.png" %}" class="tile-image">
+          <h3 class="tile-title">Ace - Ambrée</h3>
+          <div class="text-boutique">
+            <p>Robe légèrement ambrée et reflets orangés, mousse blanche généreuse et tenace… </br>
+               Le nez est classique d’une ambrée, avec des notes sur le bubble-gum, le pin, et les agrumes. </br> 6,8% Vol. </p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/photoBrune.png" %}" class="tile-image">
+          <h3 class="tile-title">La trappe - Brune</h3>
+          <div class="text-boutique">
+            <p>De couleur acajou, elle laisse évaporer des arômes de cacao très délicats et équilibrés. </br>
+              La dégustation de cette bière se fait avec plaisir grâce à la rondeur apportée par le caramel et le chocolat.</br> 9,2% Vol.</p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="tile">
+          <img src="{% static "blog/assets/img/photoBlanche.png" %}" class="tile-image">
+          <h3 class="tile-title">Oxit - Blanche Bio</h3>
+          <div class="text-boutique">
+            <p>Habillée dans sa robe blonde dorée qui rappelle la paille, et sous une mousse fine mais persistante. </br>
+               la bière Oxit Bio vous offre au nez des arômes fruités et citronné de gingembre sous une touche poivré. </br> 4,8% Vol.</p>
+        </div>
+          <a id="addpanier" class="btn btn-primary btn-large btn-block" href="#">Ajout au panier</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+<script>
+/*  var i = window.localstorage.setItem('panier', i);
+  $('#addpanier').on('click', function(){
+      window.localstorage.setItem('panier', i);
+      $('.fa-shopping-cart').after().text(' 1');
+  });*/
+
+</script>
+{% endblock %}

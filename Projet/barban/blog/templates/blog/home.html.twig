@@ -1,0 +1,85 @@
+{% extends "base.html.twig" %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+        <img class="entete" src="{% static "blog/assets/img/EnteteBarBan.jpg" %}" alt="Entete">
+
+        <div class="row demo-tiles">
+
+          <div class="col-xs-12">
+            <div class="tile">
+              <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+              <img src="{% static "blog/assets/img/photoCharbon.png" %}" class="tile-image">
+              <h3 class="tile-title">Charbon (Nero Nemesis - Booba)</h3>
+              <p>La bière Charbon est une Stout/Noire avec une robe brune foncée presque noire. Sa mousse de taille moyenne est beige. Cette bière possède une texture grasse et crémeuse. <br />
+                Fidèle au style Stout, l'arôme de cette bière est un mélange de chocolat, de caramel et de vanille.<br />
+                En bouche nous retrouvons le chocolat et le malt. Nous pouvons également gouter la vanille et le caramel.
+                Une bonne bière pour découvrir le style Stout/Noire.<br />
+                7% Vol.</p>
+                <p class="i">« Je suis au charbon, je suis au charbon <br />
+                  Je suis au charbon, je suis au charbon <br />
+                  Je suis au charbon, je suis au charbon <br />
+                  Je suis au charbon, je suis au charbon » - Charbon, Booba
+                </p>
+                <audio controls="controls">
+                  Votre navigateur ne supporte pas l'élément <code>audio</code>.
+                  <source src="{% static "blog/assets/sound/Booba-Charbon.mp3" %}" type="audio/wav">
+                </audio>
+              <!--<a class="btn btn-primary btn-large btn-block" target="_blank" href="https://www.youtube.com/watch?v=tjtfQtjDEuQ">La musique</a>-->
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="tile">
+              <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+              <img src="{% static "blog/assets/img/PhotoRosa.png" %}" class="tile-image">
+              <h3 class="tile-title">Rosa (ShegueyVara 2 - Gradur)</h3>
+              <p>La bière Rosa, présentée par Gradur a robe légèrement rosée apportée par l’utilisation de fleurs d’hibiscus.Le nez frais sur des notes florales et fruitées.<br />
+                Cette bière est rassée avec des fleurs d’hibiscus séchées en infusion, cette technique permet de retirer toutes les notes poivrées et fleuries de l’hibiscus sans apporter de sucres.<br />
+                Elle est légère, rafraichissante et complétée de légères notes acidulées apportées par la présence de blé.<br />
+                4,5% Vol.
+              </p>
+
+              <p class="i">« Elle est che-frai, c'est de la peuf khey <br/>
+                C'est toi que j'veux, chérie, y'a pas d'à peu près » <br />
+                « Tellement d'soucis dans la tête, laisse-moi m'enjailler » - Rosa, Gradur
+              </p>
+              <audio controls="controls">
+                Votre navigateur ne supporte pas l'élément <code>audio</code>.
+                <source src="{% static "blog/assets/sound/Gradur-Rosa.mp3" %}" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="tile tile-hot">
+              <img src="{% static "blog/assets/img/icons/svg/ribbon.svg" %}" alt="ribbon" class="tile-hot-ribbon">
+              <img src="{% static "blog/assets/img/BiereBlanche.png" %}" class="tile-image">
+              <h3 class="tile-title">Blanche du paradis (Nero Nemesis - Booba)</h3>
+              <p>La robe jaune claire de cette bière blanche présente une très belle mousse blanche durable. Le nez est intéressant à de nombreux égards.<br />
+                 On y retrouve de fines notes de levures fruitées, des touches épicées ainsi que d'évidents arômes de pain.<br />
+                 La complexité aromatique est confirmée en bouche. L'attaque est légère et dominée par les saveurs d'agrumes et d'épices.<br />
+                 Une très légère acidité s'installe peu à peu avant le final, finement herbacé. Une grande bière blanche.<br />
+                 5,5% Vol.
+              </p>
+
+              <p class="i">« Fuyons d'ici ma duchesse <br />
+                Rien que nous, très loin du reste » - U2K, Booba
+              </p>
+              <audio controls="controls">
+                Votre navigateur ne supporte pas l'élément <code>audio</code>.
+                <source src="{% static "blog/assets/sound/Booba-U2k.mp3" %}" type="audio/wav">
+              </audio>
+            </div>
+
+          </div>
+
+          <img class="photoP1" src="{% static "blog/assets/img/BoobaBiere.jpg" %}" alt="Entete">
+
+          <div class="col-xs-3">
+            <a class="btn btn-block btn-lg btn-info" target="_blank" href="https://itunes.apple.com/fr/album/nero-nemesis/id1056739373">Son album</a>
+          </div>
+
+          {% endblock %}

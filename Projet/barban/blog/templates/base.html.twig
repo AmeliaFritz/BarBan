@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>BarBan | {% block title %}{% endblock %}</title>
+        {% block css %}
+        <link rel="stylesheet" href="{% static "blog/assets/css/vendor/bootstrap/css/bootstrap.min.css" %}"/>
+        <link rel="stylesheet" href="{% static "blog/assets/css/flat-ui.css" %}"/>
+        <link rel="stylesheet" href="{% static "blog/assets/css/font-awesome.min.css" %}">
+        <link rel="stylesheet" href="{% static "blog/assets/css/style.css" %}"/>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container">
+          {% block nav %}
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                  <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand">BarBan</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="{% url 'home' %}">Accueil</a></li>
+                    <li><a href="{% url 'boutique' %}">Boutique</a></li>
+                    <li><a href="{% url 'panier' %}">Panier <i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'registration_register' %}">Inscription</a></li>
+                    <li><a href="{% url 'django.contrib.auth.views.login' %}">Connexion</a></li>
+                </ul>
+                 <!--<form class="navbar-form navbar-right" action="#" role="connexion">
+                  <div class="form-group">
+
+                    <div class="input-group">
+                      <input class="form-control" id="navbarInput-01" placeholder="Pseudo" type="connexion">
+                    </div>
+
+                    <div class="input-group">
+                      <input class="form-control" id="navbarInput-01" placeholder="Mot de passe" type="connexion">
+                    </div>
+
+                    <button type="submit" class="btn"><span class="fui-power"></span></button>
+                  </div>
+                </form>-->
+              </div><!-- /.navbar-collapse -->
+            </nav>
+            {% endblock %}
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+      </div>
+      <footer><p>Copyright - Projet Barban Amelia</p></footer>
+      {% block js %}
+      <script src="{% static "blog/assets/js/vendor/jquery.min.js" %}"></script>
+      <script src="{% static "blog/assets/js/flat-ui.js" %}"></script>
+      <script>$('input').addClass('form-control');</script>
+      {% endblock %}
+     </body>
+</html>
